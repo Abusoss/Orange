@@ -1,0 +1,95 @@
+/* Header */
+
+body{
+   margin: 0;
+   padding: 0;
+}
+
+header{
+   position: fixed;
+   top: 0px;
+   width: 100%;
+   height: 80px;
+   z-index: 10;
+}
+
+.navBar {
+   display: grid;
+   grid-auto-flow: column;
+   grid-template-columns: 300px minmax(0, 1fr) 200px;
+   place-items: center;
+   background: var(--dark);
+   height: 100%;
+
+}
+.logo{
+   margin-left: 120px;
+   height: 70px;
+   width: 70px;
+   object-fit: cover;
+}
+/*
+ .logo{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+*/
+.navBar div{
+   justify-self: start;
+}
+
+.navBar img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+.navBar ul {
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   gap: 20px;
+}
+.navBar ul li a{
+   color: white;
+   text-decoration: none;
+
+}
+
+ul {
+   list-style: none;
+}
+
+#hm{
+   height: 30px;
+   width: 30px;
+}
+
+li svg{
+   display: inline;
+}
+
+li div{
+   display: inline;
+}
+
+.navBar a{
+   display: grid;
+   justify-items: center;
+}
+
+.buttonPrimary{
+   position: relative;
+   margin-bottom: 25px;
+   margin-left: 70px;
+}
+
+.buttonPrimary a {
+   text-decoration: none;
+   color: white;
+   display: grid;
+   grid-auto-flow :column;
+   gap: 5px;
+   align-items: center;
+}

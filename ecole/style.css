@@ -1,0 +1,199 @@
+main {
+   display: grid;
+   grid-template-columns: 1fr;
+   width: 100%;
+   gap: 50px;
+   overflow: hidden;
+}
+
+.container{
+   display: grid;
+   place-items: center;
+   place-self: center;
+   background-color: var(--dark);
+   width: 100%;
+   min-height: 98vh;
+   border-radius: 0% 0% 30px 30px;
+   overflow: hidden;
+}
+
+.content {
+   display: grid;
+   grid-template-areas: "sidebar playground";
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 300px minmax(0, 1fr);
+   gap: 30px;
+   width: 70%;
+   height: 70%;
+}
+.onTheSide{
+   grid-area: sidebar;
+   display: grid;
+   grid-template-rows: 1.2fr 0.8fr;
+   gap: 20px;
+}
+.sideBar {
+   background-color: var(--light);
+   height: fit-content;
+   width: 100%;
+   border-radius: 15px;
+}
+.enoncer{
+   display: grid;
+   background-color: var(--light);
+   place-items: center;
+   height: 100%;
+   width: 500px;
+   border-radius: 15px;
+}
+.enoncer p.titre{
+   display: inline;
+   text-align: center;
+   color: var(--white);
+   padding: 15px;
+   width: 270px;
+   font-size: 18px;
+   font-weight: 600;
+}
+.enoncer p.text{
+   display: inline;
+   text-align: center;
+   color: #ffffff58;
+   width: 270px;
+   padding: 15px;
+   font-size: 14px;
+   font-weight: 400;
+}
+.enoncer a{
+   color: #ffffff58;
+   text-decoration: underline;
+   padding: 15px;
+}
+
+.topBar {
+   grid-area: topbar;
+   background-color: var(--light);
+   width: 100%;
+   display: grid;
+   place-items: center;
+   background: #1c1e20;
+   border-radius: 15px;
+}
+
+.topBar ul {
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+}
+.topBar ul li {
+   color: var(--white);
+}
+
+.playground {
+   grid-area: playground;
+   display: grid;
+   align-items: center;
+   line-height: 180%;
+   width: fit-content;
+   height: fit-content;
+   background: #1c1e20;
+   border-radius: 15px;
+   font-size: 16px;
+   color: var(--white);
+   overflow: hidden;
+}
+.playground .algo{
+   display: grid;
+   place-items: center;
+   height: 100%;
+   width: 100%;
+   overflow: auto;
+}
+.playground pre{
+   padding: 25px 0;
+}
+
+.sr-only{
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   white-space: nowrap;
+   border: 0;
+}
+
+
+.menu {
+   width: 300px;
+   border-radius: 8px;
+   overflow: hidden;
+   overflow-anchor: none;
+}
+
+.item {
+   overflow: hidden;
+   overflow-anchor: none;
+}
+.item:nth-child(2) {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+   border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+.item:nth-child(3) {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn {
+   display: block;
+   padding: 16px 20px;
+   background: #262739;
+   color: white;
+   position: relative;
+}
+
+.btn i {
+   margin-right: 10px;
+}
+
+.smenu {
+   background: var(--light);
+   overflow: hidden;
+   transition: max-height 0.3s;
+   max-height: 0;
+}
+
+.smenu a {
+   display: block;
+   padding: 16px 26px;
+   color: white;
+   margin: 4px 0;
+   position: relative;
+}
+
+.smenu a::before {
+   content: "";
+   position: absolute;
+   width: 6px;
+   height: 100%;
+   background: #262739;
+   left: 0;
+   top: 0;
+   transition: .3s;
+   opacity: 0;
+}
+
+.smenu a:hover::before {
+   opacity: 1;
+}
+.smenu a.active::before {
+   opacity: 1;
+}
+
+.item.active .smenu {
+   max-height: 10em;
+}
+.type.active{
+   text-decoration: underline;
+}
