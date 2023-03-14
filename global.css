@@ -1,15 +1,16 @@
+:root {
+   --light: #1c1e20;
+   --dark: black;
+   --white: white;
+   --orange: #ff8000;
+   --border: rgba(255, 255, 255, 0.3) 1px solid;
+}
+
 @font-face {
    font-family: 'TTInterphasesProVariable';
    src: url('./src/fonts/TT-Interphases-Pro-Trial-2-000/TT Interphases Pro Trial 2-000/TT_Interphases_Pro_Trial_Variable.ttf');
    font-style: normal;
    font-display: swap;
-}
-
-:root {
-   --light: #1c1e20;
-   --dark: black;
-   --white: white;
-   --border: rgba(255, 255, 255, 0.3) 1px solid;
 }
 
 html, body, div, span, applet, object, iframe,
