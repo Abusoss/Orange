@@ -1,0 +1,16 @@
+.avatar {
+    display: none;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px !important;
+}
+
+.avatar img{  
+
+    display: none;
+    max-width: 100px;
+    height: 100%;
+    object-fit: cover;
+
+}

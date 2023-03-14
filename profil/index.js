@@ -1,13 +1,17 @@
 function previewImage(event) {
+    var avatar = document.getElementById('avatar');
+    avatar.style.display = 'block';
     var preview = document.getElementById('preview');
     preview.style.display = 'block';
     preview.src = URL.createObjectURL(event.target.files[0]);
     var deleteButton = document.getElementById('delete');
     deleteButton.style.display = 'block';
-  }
+}
 
-  
-  function deleteImage() {
+
+function deleteImage() {
+    var avatar = document.getElementById('avatar');
+    avatar.style.display = 'none';
     var image = document.getElementById('pdp');
     image.value = '';
     var preview = document.getElementById('preview');
@@ -15,10 +19,10 @@ function previewImage(event) {
     preview.src = '#';
     var deleteButton = document.getElementById('delete');
     deleteButton.style.display = 'none';
-  }
+}
 
-  
-  var input = document.getElementById('pdp');
-  input.addEventListener('change', previewImage);
-  var deleteButton = document.getElementById('delete');
-  deleteButton.addEventListener('click', deleteImage);
+
+var input = document.getElementById('pdp');
+input.addEventListener('change', previewImage);
+var deleteButton = document.getElementById('delete');
+deleteButton.addEventListener('click', deleteImage);
