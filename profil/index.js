@@ -1,6 +1,4 @@
 function previewImage(event) {
-    var avatar = document.getElementById('avatar');
-    avatar.style.display = 'block';
     var preview = document.getElementById('preview');
     preview.style.display = 'block';
     preview.src = URL.createObjectURL(event.target.files[0]);
@@ -10,8 +8,6 @@ function previewImage(event) {
 
 
 function deleteImage() {
-    var avatar = document.getElementById('avatar');
-    avatar.style.display = 'none';
     var image = document.getElementById('pdp');
     image.value = '';
     var preview = document.getElementById('preview');

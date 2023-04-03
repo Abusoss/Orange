@@ -16,8 +16,20 @@
 
 <body>
    <div class="body">
-      <?= $content ?>
+      <?php require(__DIR__ . '/header/header.php'); ?>
+      <main>
+         <div class="main__container">
+            <h1><?= $h1 ?></h1>
+            <div class="main__container__wrapper <?= isset($isSidebar)? $isSidebar : ''; ?>">
+               <?php isset($isSidebar) && require(__DIR__ . '/sidebar/index.php'); ?>
+               <div class="main__container__wrapper__content">
+                  <?= $content ?>
+               </div>
+            </div>
+         </div>
+      </main>
    </div>
+   <?php require(__DIR__ . '/footer/footer.php'); ?>
 </body>
 
 </html>
