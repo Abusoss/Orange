@@ -2,13 +2,13 @@
 <nav class="sidebar">
    <ul>
       <li>
-         <a href="">Profile</a>
+         <a href="/orange/account/profil/">Profile</a>
       </li>
       <li>
-         <a href="">Interventions</a>
+         <a href="/orange/account/interventions">Interventions</a>
       </li>
       <li>
-         <a href="">Materiels</a>
+         <a href="/orange/account/materiels">Materiels</a>
       </li>
       <li>
          <a href="">Déconnections</a>
