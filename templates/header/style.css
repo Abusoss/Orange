@@ -1,11 +1,11 @@
 /* Header */
 
-body{
+body {
    margin: 0;
    padding: 0;
 }
 
-header{
+header {
    position: fixed;
    top: 0px;
    width: 100%;
@@ -17,17 +17,20 @@ header{
    display: grid;
    grid-auto-flow: column;
    grid-template-columns: 300px minmax(0, 1fr) 200px;
-   place-items: center;
+   align-items: end;
+   justify-items: center;
    background: var(--dark);
    height: 100%;
 
 }
-.logo{
+
+.logo {
    margin-left: 120px;
    height: 70px;
    width: 70px;
    object-fit: cover;
 }
+
 /*
  .logo{
    width: 100%;
@@ -35,7 +38,7 @@ header{
    object-fit: cover;
 }
 */
-.navBar div{
+.navBar div {
    justify-self: start;
 }
 
@@ -48,48 +51,55 @@ header{
 .navBar ul {
    display: flex;
    width: 100%;
+   height: 100%;
    justify-content: space-evenly;
-   gap: 20px;
 }
-.navBar ul li a{
+
+.navBar ul li a {
    color: white;
    text-decoration: none;
-
 }
 
 ul {
    list-style: none;
 }
 
-#hm{
+#hm {
    height: 30px;
    width: 30px;
 }
 
-li svg{
+li svg {
    display: inline;
 }
 
-li div{
+li div {
    display: inline;
 }
 
-.navBar a{
+.navBar a {
    display: grid;
    justify-items: center;
 }
 
-.buttonPrimary{
+.buttonPrimary {
    position: relative;
-   margin-bottom: 25px;
-   margin-left: 70px;
+   place-self: center;
 }
 
 .buttonPrimary a {
    text-decoration: none;
    color: white;
    display: grid;
-   grid-auto-flow :column;
-   gap: 5px;
+   grid-auto-flow: column;
+   gap: 10px;
+   align-items: center;
+}
+.buttonSecondary a {
+   text-decoration: none;
+   color: white;
+   display: grid;
+   grid-auto-flow: column;
+   gap: 10px;
    align-items: center;
 }

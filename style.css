@@ -1,15 +1,5 @@
 /* Main */
 
-main {
-   display: grid;
-   grid-template-columns: 1fr;
-   /* padding: 0 30px 0 30px; */
-   place-items: center;
-   padding-top: 80px;
-   height: calc(100vh - 80px);
-   min-height: fit-content;
-}
-
 .main__container {
    display: grid;
    grid-template-columns: 1fr;
@@ -19,9 +9,12 @@ main {
    min-height: fit-content;
    margin: 100px 0 0 0;
    /* padding: 100px 0 250px 0; */
-   grid-template-rows: max-content max-content max-content;
    gap: 50px;
    /* overflow: hidden; */
+}
+.main__container__wrapper__content{
+   display: grid;
+   gap: 50px;
 }
 
 .main__container h1 {
