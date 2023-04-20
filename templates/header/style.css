@@ -21,7 +21,6 @@ header {
    justify-items: center;
    background: var(--dark);
    height: 100%;
-
 }
 
 .logo {
@@ -85,6 +84,7 @@ li div {
 .buttonPrimary {
    position: relative;
    place-self: center;
+   place-items: center;
 }
 
 .buttonPrimary a {
@@ -94,6 +94,10 @@ li div {
    grid-auto-flow: column;
    gap: 10px;
    align-items: center;
+}
+.buttonSecondary{
+   display: grid;
+   place-items: center;
 }
 .buttonSecondary a {
    text-decoration: none;

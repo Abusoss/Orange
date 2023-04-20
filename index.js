@@ -4,9 +4,6 @@ const connection = document.querySelector('.connection')
 const inscription_summary = document.querySelector('.inscription_summary')
 const connection_summary = document.querySelector('.connection_summary')
 
-
-console.log(inscription, connection)
-
 function setOpen(elem) {
    elem.open = true;
 }
