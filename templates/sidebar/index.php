@@ -7,11 +7,19 @@
       <li>
          <a href="/orange/account/interventions">Interventions</a>
       </li>
+      <?php
+      if ($_SESSION['role'] == 'admin') {
+         echo '<li>
+            <a href="/orange/account/utilisateurs">Utilisateurs</a>
+         </li>';
+      }
+      ?>
+
       <li>
          <a href="/orange/account/materiels">Materiels</a>
       </li>
       <li>
-         <a href="">Déconnections</a>
+         <a href="/orange/templates/logout.php">Déconnections</a>
       </li>
    </ul>
 </nav>

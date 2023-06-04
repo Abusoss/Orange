@@ -1,7 +1,10 @@
 <link href="/orange/templates/footer/style.css" rel="stylesheet" />
 <footer>
 
-<div class="row1"><a href="/e-enseignement/ecole/"><svg xmlns="http://www.w3.org/2000/svg"
+<div class="row1">
+    <div class="infocontact">
+        <a href="/orange/contact">
+        <svg xmlns="http://www.w3.org/2000/svg"
                         width="20" height="20" viewBox="0 0 47 47">
                         <g id="Icon_feather-help-circle" data-name="Icon feather-help-circle"
                             transform="translate(-1.5 -1.5)">
@@ -16,15 +19,8 @@
                                 fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="5" />
                         </g>
-                    </svg>Aide et contact</a></div>
-
-
-
-<div class="row2">
-   <a href="https://u.gg/lol/champions/illaoi/build">Information légales</a>
-   <a href="https://u.gg/lol/champions/illaoi/build">Données personelles</a>
-   <a href="https://u.gg/lol/champions/illaoi/build">Gestion cppkies</a>
-   <a href="https://u.gg/lol/champions/illaoi/build">Accesibilité</a>
-   <a href="https://u.gg/lol/champions/illaoi/build">@ Orange 2023</a>
-</div>
+                    </svg>Information légales et contact</a>
+                </div>
+                    <div class="droit"><a href="#">@ Orange 2023</a></div>
+                </div>
 </footer>

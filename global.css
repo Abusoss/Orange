@@ -4,6 +4,7 @@
    --white: white;
    --orange: #ff8000;
    --border: rgba(255, 255, 255, 0.3) 1px solid;
+   --red: #ff0000;
 }
 
 @font-face {
@@ -333,6 +334,22 @@ main {
 }
 
 .main__container form div input {
+   display: block;
+   padding-left: 0;
+   padding-right: 0;
+   padding-top: 0.625rem;
+   padding-bottom: 0.625rem;
+   background-color: transparent;
+   color: #000000;
+   font-size: 1rem;
+   line-height: 1.5rem;
+   width: 100%;
+   border-width: 0;
+   border-bottom: 1px solid #000000;
+   border-color: #000000;
+   appearance: none;
+}
+.main__container form div textarea {
    display: block;
    padding-left: 0;
    padding-right: 0;

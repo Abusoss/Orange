@@ -8,9 +8,7 @@ footer {
    margin: none;
    color: white;
    display: grid;
-   grid-row: 2;
-   grid-column: 1;
-   grid-template-areas: "row1" "row2";
+   grid-auto-flow: column;
 }
 
 footer a {
@@ -19,11 +17,22 @@ footer a {
 }
 
 .row1 {
-   grid-area: row1;
+   display: grid;
+   grid-auto-flow: column;
    text-decoration: none;
-   width: fit-content;
    margin-left: 30px;
    margin-top: 15px;
+}
+.infocontact{
+   place-self: center;
+   place-items:center;
+   width: fit-content;
+}
+.droit{
+   align-self: center;
+   justify-self: end;
+   margin-right: 20px;
+   width: fit-content;
 }
 
 .row1 a
@@ -34,13 +43,4 @@ footer a {
    gap: 5px;
    align-items: center;
    text-decoration: none;
-}
-
-.row2 {
-   grid-area: row2;
-   display: grid;
-   grid-template-areas: ". . . . .";
-   justify-items: center;
-   border-top: 2px grey solid;
-   align-items: center;
 }
